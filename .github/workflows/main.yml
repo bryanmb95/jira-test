@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches: [ bryanmb95-patch-1-SCRM-24 ]
+  pull_request:
+    branches: [ bryanmb95-patch-1-SCRM-24 ]
+
+jobs:     
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
